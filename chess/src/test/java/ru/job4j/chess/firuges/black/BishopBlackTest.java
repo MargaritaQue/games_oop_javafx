@@ -31,21 +31,21 @@ class BishopBlackTest {
     @Test
     void wayF7B3() {
         BishopBlack input = new BishopBlack(Cell.F7);
-        Cell[] output = {Cell.E6,Cell.D5,Cell.C4,Cell.B3};
+        Cell[] output = {Cell.E6, Cell.D5, Cell.C4, Cell.B3};
         assertThat(input.way(Cell.B3)).isEqualTo(output);
     }
 
     @Test
     void wayF2C5() {
         BishopBlack input = new BishopBlack(Cell.F2);
-        Cell[] output = {Cell.E3,Cell.D4,Cell.C5};
+        Cell[] output = {Cell.E3, Cell.D4, Cell.C5};
         assertThat(input.way(Cell.C5)).isEqualTo(output);
     }
 
     @Test
     void wayC3E1() {
         BishopBlack input = new BishopBlack(Cell.C3);
-        Cell[] output = {Cell.D2,Cell.E1};
+        Cell[] output = {Cell.D2, Cell.E1};
         assertThat(input.way(Cell.E1)).isEqualTo(output);
     }
 

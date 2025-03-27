@@ -29,10 +29,12 @@ public class BishopBlack implements Figure {
         Cell[] steps = new Cell[size];
         int deltaX = 1;
         int deltaY = 1;
-        if ((x > dest.getX() && y < dest.getY()) || (x > dest.getX() && y > dest.getY())) {
+        if ((x > dest.getX() && y < dest.getY())
+                || (x > dest.getX() && y > dest.getY())) {
             deltaX = -1;
         }
-        if ((x < dest.getX() && y > dest.getY()) || (x > dest.getX() && y > dest.getY())) {
+        if ((x < dest.getX() && y > dest.getY())
+                || (x > dest.getX() && y > dest.getY())) {
             deltaY = -1;
         }
         for (int index = 0; index < size; index++) {
